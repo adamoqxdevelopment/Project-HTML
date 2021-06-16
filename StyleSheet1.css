@@ -19,29 +19,39 @@
     height: 1600px;
     background-color: #e2c5d2;
 }
-#h-highest {
-    color: #e4afc7;
-    text-shadow: 2px 2px 5px black;
-    font-size: 75px;
+    #h-highest {
+        color: #e4afc7;
+        text-shadow: 2px 2px 5px black;
+        font-size: 75px;
 }
-#left-panel {
-    float: left;
-    background-color: black;
-    height: 750px;
-    margin-top: 100px;
-    width: 250px;
-    text-align: center;
-    padding-top: 25px;
-}
-    #left-panel h1 {
-    color: white;
-    font-size: 25px;
-}
-.left-panel-child {
-    color: white;
-    background-color: green;
-    height: 60px;
-    margin-bottom: 15px;
-    padding: 5px;
+    #left-panel {
+        float: left;
+        background-color: black;
+        height: 750px;
+        margin-top: 100px;
+        width: 250px;
+        text-align: center;
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
 
 }
+    #left-panel h1 {
+        color: red;
+        font-size: 25px;
+}
+    #left-panel h1 :hover {
+        color: white;
+    }
+    .left-panel-child {
+        color: white;
+        background-color: green;
+        height: 70px;
+        margin-bottom: 15px;
+        padding: 5px;
+        transition: 1s;
+
+}
+    .left-panel :hover {
+        color: red;
+        }
