@@ -50,7 +50,7 @@
         height: 70px;
         margin-bottom: 15px;
         padding: 5px;
-        transition: 1s;
+        transition: 0.5s;
 
 }
     .left-panel:hover{
@@ -58,6 +58,7 @@
         }
     .left-panel-child:hover {
         background-color: red;
+        box-shadow: 3px 2px 5px #726d6d;
     }
 
     button {
