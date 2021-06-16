@@ -20,8 +20,9 @@
     background-color: #e2c5d2;
 }
     #h-highest {
-        color: #e4afc7;
-        text-shadow: 2px 2px 5px black;
+        color: #7a7a7a;
+        /*color: #e4afc7;*/
+/*        text-shadow: 2px 2px 5px black;*/
         font-size: 75px;
 }
     #left-panel {
@@ -40,7 +41,7 @@
         color: red;
         font-size: 25px;
 }
-    #left-panel h1 :hover {
+    #left-panel h1:hover {
         color: white;
     }
     .left-panel-child {
@@ -52,6 +53,26 @@
         transition: 1s;
 
 }
-    .left-panel :hover {
+    .left-panel:hover{
         color: red;
         }
+    .left-panel-child:hover {
+        background-color: red;
+    }
+
+    button {
+        color: green;
+        font-size: 15px;
+    }
+    button:hover {
+        background-color: green;
+        font-size: 10px;
+    }
+    #main-box {
+        padding-top: 150px;
+        padding-left: 15px;
+
+    }
+    #main-box h1:hover {
+        color:green;
+    }
