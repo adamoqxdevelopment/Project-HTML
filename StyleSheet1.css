@@ -23,6 +23,7 @@
         color: white;
         text-shadow: 2px 2px 5px black;
         font-size: 75px;
+        cursor: pointer;
 }
     #left-panel {
         float: left;
@@ -36,11 +37,13 @@
         padding-right: 10px;
         margin-left: -10px;
 
+
 }
     #left-panel h1 {
         color: white;
         font-size: 25px;
         transition: 1s;
+        cursor: pointer;
 }
     #left-panel h1:hover {
         color: #d8d8d8;
@@ -53,13 +56,20 @@
     padding: 5px;
     transition: 0.5s;
     border: 1px solid black;
-    cursor: wait;
+    cursor: pointer;
 }
+    .left-panel-child p {
+        color: white;
+        transition: 0.5s;
+    }
+
     .left-panel-child:hover {
         background-color: #968bf6;
         box-shadow: 3px 2px 5px #6b6b6b;
     }
-
+    .left-panel-child:hover > p {
+        color: black;
+    }
     button {
         color: green;
         font-size: 15px;
