@@ -20,9 +20,8 @@
     background-color: #e2c5d2;
 }
     #h-highest {
-        color: #e2c5d2;
-        /*color: #e4afc7;*/
-/*        text-shadow: 2px 2px 5px black;*/
+        color: #e4afc7;
+        text-shadow: 2px 2px 5px black;
         font-size: 75px;
 }
     #left-panel {
