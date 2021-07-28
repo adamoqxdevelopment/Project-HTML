@@ -86,5 +86,8 @@
 
     }
     #main-box h1:hover {
-        color:green;
+    }
+
+    #wynik {
+        color: red;
     }

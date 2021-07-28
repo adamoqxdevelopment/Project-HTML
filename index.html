@@ -24,6 +24,35 @@
         <div id="main-box">
             <h1>
                 main-box
+                <p id="Kolory"></p>
+                <p id="Długość"></p>
+                <p id="Losowa-liczba"></p>
+                <p>Dzisiejsza data:</p>
+                <p id="Dziś-data">puste</p>
+                <p id="Dziś-godzina">puste</p>
+
+                <script>
+
+                    /*                    var osoba = { imie:"John", nazwisko:"Smith", oczy:"czarne"};
+                                        document.getElementById("Kolory").innerHTML = osoba.imie + " " + osoba.nazwisko + " ma " + osoba.oczy + " oczy.";
+                    */
+                    var alfabet = "abcdefghijklmnoprstuwxyz";
+                    document.getElementById("Długość").innerHTML = alfabet.length;
+
+                    var losowa = Math.random() * 100;
+                    document.getElementById("Losowa-liczba").innerHTML = Math.round(losowa);
+
+                function zegarek() {
+                 var data = new Date();
+
+                    document.getElementById("Dziś-data").innerHTML = data.getDate() + " : " + (data.getMonth() + 1) + " : " + data.getFullYear();
+
+                    document.getElementById("Dziś-godzina").innerHTML = data.getHours() + " : " + data.getMinutes() + " : " + data.getSeconds(); 
+                  setTimeout("zegarek()", 1);
+                    }
+                  zegarek();
+                </script>
+
             </h1>
         </div>
     </div>
