@@ -5,16 +5,71 @@
     <meta charset="utf-8" />
     <title>Zegarek</title>
     <link href="https://pl.allfont.net/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="clock-style.css">
+    <style>
+        html {
+            background-color: #303040;
+
+        }
+        body {
+            font-family: 'Digital-7', arial;
+            line-height: 1px;
+
+        }
+            p {
+            text-align: center;
+            color: #1dd2ff;
+            
+/*          text-shadow: 2px 2px #2b4ac4;*/
+            font-size: 75px;
+            padding-top: 0px;
+        }
+
+        #zegarek {
+            margin-top: 70px;
+            padding-top: 70px;
+        }
+        #Dziś-data {
+            font-size: 60px;
+        }
+    </style>
 </head>
 <body>
     <div id="zegarek">
-        
-        <p id="html-godzina">puste</p>
-        <p id="html-data">puste</p>
+        <p id="minęła-doba" style="display: none;">Minela dobra</p>
+        <p id="minęła-godzina" style="display: none;">Minela godzina</p>
+        <p id="minęła-minuta" style="display: none;">Minela minuta</p>
+        <p id="Dziś-godzina">puste</p>
+        <p id="Dziś-data">puste</p>
 
     </div>
 
-    <script src="scripts.js"></script>
+    <script>
+
+        function zegarek() {
+            var data = new Date();
+            var liczniksekund = data.getSeconds();
+
+            document.getElementById("Dziś-data").innerHTML = data.getDate() + ", " + (data.getMonth() + 1) + ", " + data.getFullYear();
+
+            document.getElementById("Dziś-godzina").innerHTML = data.getHours() + " : " + data.getMinutes() + " : " + data.getSeconds();
+            setTimeout("zegarek()", 500);
+            if (liczniksekund == 0) {
+                document.getElementById("minęła-minuta").style.display = 'block';
+                setTimeout("document.getElementById('minęła-minuta').style.display = 'none';", 500);
+            }
+            if (licznikminut == 0) {
+                document.getElementById("minęła-godzina").style.display = 'block';
+                setTimeout("document.getElementById('minęła - godzina').style.display = 'none';", 500);
+            }
+            if (licznikminut == 0) {
+                document.getElementById("minęła-doba").style.display = 'block';
+                setTimeout("document.getElementById('minęła - doba').style.display = 'none';", 500);
+
+            }
+
+        }
+        
+        zegarek();
+    </script>
 </body>
 </html>
