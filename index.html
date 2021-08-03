@@ -3,13 +3,13 @@
 <html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="ikona.ico">
     <title>Simple website layout</title>
 </head>
 <body>
     <div id="fixed-header">
-        <h class="h-main" id="h-highest"> Simple website html layout</h>
+        <h class="h-main" id="h-highest"> First Order Motion Model</h>
     </div>
     <div id="blankspace1600px">
         <div id="left-panel">
@@ -24,36 +24,13 @@
         <div id="main-box">
             <h1>
                 main-box
-                <p id="Kolory"></p>
-                <p id="Długość"></p>
-                <p id="Losowa-liczba"></p>
-                <p>Dzisiejsza data:</p>
-                <p id="Dziś-data">puste</p>
-                <p id="Dziś-godzina">puste</p>
+                </h1>
+                <p id="html-data"></p>
+                <p id="html-godzina"></p>
+                
 
-                <script>
+                <script src="scripts.js"></script>
 
-                    /*                    var osoba = { imie:"John", nazwisko:"Smith", oczy:"czarne"};
-                                        document.getElementById("Kolory").innerHTML = osoba.imie + " " + osoba.nazwisko + " ma " + osoba.oczy + " oczy.";
-                    */
-                    var alfabet = "abcdefghijklmnoprstuwxyz";
-                    document.getElementById("Długość").innerHTML = alfabet.length;
-
-                    var losowa = Math.random() * 100;
-                    document.getElementById("Losowa-liczba").innerHTML = Math.round(losowa);
-
-                function zegarek() {
-                 var data = new Date();
-
-                    document.getElementById("Dziś-data").innerHTML = data.getDate() + " : " + (data.getMonth() + 1) + " : " + data.getFullYear();
-
-                    document.getElementById("Dziś-godzina").innerHTML = data.getHours() + " : " + data.getMinutes() + " : " + data.getSeconds(); 
-                  setTimeout("zegarek()", 1);
-                    }
-                  zegarek();
-                </script>
-
-            </h1>
         </div>
     </div>
 

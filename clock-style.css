@@ -1,0 +1,29 @@
+﻿html {
+    background-color: #303040;
+}
+
+body {
+    font-family: 'Digital-7', arial;
+    line-height: 1px;
+}
+
+p {
+    text-align: center;
+    color: #1dd2ff;
+    /*          text-shadow: 2px 2px #2b4ac4;*/
+    font-size: 75px;
+    padding-top: 0px;
+}
+
+#zegarek {
+    margin-top: 70px;
+    padding-top: 70px;
+}
+
+#html-godzina {
+    font-size: 75px;
+}
+
+#html-data {
+    font-size: 60px;
+}
