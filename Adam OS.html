@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Adam OS</title>
+
+    <style>
+        body {
+            background-color: #4f4f4f;
+            margin-top: -10px;
+        }
+
+        #os {
+            text-align: center;
+            font-size: 150px;
+            font-family: 'Maven Pro', sans-serif;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #d8f0f0;
+            top: 150px;
+
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 10s ease-in-out infinite alternate;
+        }
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0a95f2, 0 0 40px #0a95f2, 0 0 50px #0a95f2, 0 0 60px #0a95f2, 0 0 70px #0a95f2;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #0ac0f2, 0 0 40px #0ac0f2, 0 0 50px #0ac0f2, 0 0 60px #0ac0f2, 0 0 70px #0ac0f2, 0 0 80px #0ac0f2;
+            }
+        }
+        #os-section {
+            background-color: black;
+        }
+        .h1-test {
+            text-align: center;
+        }
+        .p-test {
+            text-align: center;
+        }
+        #main-object {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function wejscielogo() {
+
+            $("#os").hide(0).delay(500).slideDown(1500);
+            $(".h1-test").hide(0).delay(1000).fadeIn(2000);
+            $(".p-test").hide(0).delay(1000).fadeIn(2000);
+
+        }
+
+
+
+    </script>
+</head>
+<body onload="wejscielogo()">
+
+    <div id="os-section" >
+
+        <p id="os">OS</p>
+<!--        <img id="obrazek" style="width: 500px;" src="slajdy/slajd1.jpg" />-->
+
+    </div>
+    <div id="main-object" >
+
+        <h1 class="h1-test">1</h1>
+        <h1 class="h1-test">2</h1>
+        <h1 class="h1-test">3</h1>
+        <h1 class="h1-test">4</h1>
+
+        <p class="p-test">1</p>
+        <p class="p-test">2</p>
+        <p class="p-test">3</p>
+
+        <div id="main-left-panel">
+
+            <div id="left-panel-block">
+
+                <p>1234</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
