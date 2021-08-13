@@ -2,54 +2,457 @@
 // This file is only for generating github JavaScript %usage. This is not a working js code
 // Have a nice day :)
 
-
-Հայերեն Shqip ‫العربية Български Català 中文简体 Hrvatski Česky Dansk Nederlands English Eesti Filipino Suomi Français ქართული Deutsch Ελληνικά ‫עברית हिन्दी Magyar Indonesia Italiano Latviski Lietuviškai македонски Melayu Norsk Polski Português Româna Pyccкий Српски Slovenčina Slovenščina Español Svenska ไทย Türkçe Українська Tiếng Việt
-Lorem Ipsum
-"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-What is Lorem Ipsum ?
-	Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it ?
-	It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more - or - less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.Various versions have evolved over the years, sometimes by accident, sometimes on purpose(injected humour and the like).
+window.onload = start;
 
 
-Where does it come from ?
-	Contrary to popular belief, Lorem Ipsum is not simply random text.It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.Richard McClintock, a Latin professor at Hampden - Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC.This book is a treatise on the theory of ethics, very popular during the Renaissance.The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+var przyslowia = new Array(15);
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H.Rackham.
+przyslowia[0] = "Bez pracy nie ma kołaczy";
+przyslowia[1] = "Apetyt rośnie w miarę jedzenia";
+przyslowia[2] = "Dzieci i ryby głosu nie mają";
+przyslowia[3] = "Grosz do grosza a będzie kokosza";
+przyslowia[4] = "Łaska pańska na pstrym koniu jeździ";
+przyslowia[5] = "Nie chwal dnia przed zachodem słońca";
+przyslowia[6] = "Nie od razu Kraków zbudowano";
+przyslowia[7] = "Biednemu zawsze wiatr w oczy";
+przyslowia[8] = "Nie taki diabeł straszny jak go malują";
+przyslowia[9] = "My rządzimy światem a nami kobiety";
+przyslowia[10] = "Co nagle to po diable";
+przyslowia[11] = "Mądry głupiemu ustępuje";
+przyslowia[12] = "Im dalej w las tym więcej drzew";
+przyslowia[13] = "Czas najlepszym lekarzem ";
+przyslowia[14] = "Lepiej z mądrym zgubić niż z głupim znaleźć";
 
-Where can I get some ?
-	There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non - characteristic words etc.
+var film = new Array(15);
 
-5
-paragraphs
-words
-bytes
-lists
-Start with 'Lorem
-ipsum dolor sit amet...'
+film[0] = "Interstellar";
+film[1] = "Titanic";
+film[2] = "Catch me if you can";
+film[3] = "Incepcja";
+film[4] = "Suicide squad";
+film[5] = "Joker";
+film[6] = "Godzilla";
+film[7] = "Wonder Woman";
+film[8] = "Terminator";
+film[9] = "Deadpool";
+film[10] = "Predator";
+film[11] = "Shrek";
+film[12] = "Iron man";
+film[13] = "Władca pierścieni";
+film[14] = "Park jurajski";
 
-Translations: Can you help translate this site into a foreign language ? Please email us with details if you can help.
-There are now a set of mock banners available here in three colours and in a range of standard banner sizes:
-BannersBannersBanners
-Donate: If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill.There is no minimum donation, any sum is appreciated - click here to donate using PayPal.Thank you for your support.
-Donate Bitcoin: 16UQLq1HZ3CNwhvgrarV6pMoA2CDjb4tyF
-NodeJS Python Interface GTK Lipsum Rails.NET Groovy
-The standard Lorem Ipsum passage, used since the 1500s
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+var gra = new Array(15);
 
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+gra[0] = "CSGO";
+gra[1] = "Minecraft";
+gra[2] = "Grand Theft Auto";
+gra[3] = "Ark Survival Evolved";
+gra[4] = "Euro Truck Simulator";
+gra[5] = "Farming Simulator";
+gra[6] = "The Forest";
+gra[7] = "Wiedźmin";
+gra[8] = "Tomb Raider";
+gra[9] = "Metro";
+gra[10] = "Twierdza";
+gra[11] = "Dead by daylight";
+gra[12] = "FNAF";
+gra[13] = "Dont Starve Together";
+gra[14] = "Arma";
 
-1914 translation by H.Rackham
-"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
 
-Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+var kategoria = new Array(3);
+kategoria[0] = "Przysłowie";
+kategoria[1] = "Film";
+kategoria[2] = "Gra";
 
-1914 translation by H.Rackham
-"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
 
-help@lipsum.com
-Privacy Policy
+var losowa_kategoria = Math.floor(Math.random() * 3);
+var akt_kategoria;
+if (losowa_kategoria == 0) akt_kategoria = "Przysłowie";
+if (losowa_kategoria == 1) akt_kategoria = "Film";
+if (losowa_kategoria == 2) akt_kategoria = "Gra";
+
+
+document.write('Kategoria: ' + akt_kategoria + '<br/>');
+
+var losowe_haslo = Math.floor(Math.random() * 15);
+document.write('Hasło: ' + losowe_haslo);
+
+var haslo = "";
+
+if (losowa_kategoria == 0) {
+    haslo = przyslowia[losowe_haslo];
+    haslo = haslo.toUpperCase();
+
+}
+if (losowa_kategoria == 1) {
+    haslo = film[losowe_haslo];
+    haslo = haslo.toUpperCase();
+}
+if (losowa_kategoria == 2) {
+    haslo = gra[losowe_haslo];
+    haslo = haslo.toUpperCase();
+}
+
+
+
+var yes = new Audio("img/yes.wav");
+var no = new Audio("img/no.wav");
+var win = new Audio("img/win.wav");
+var lose = new Audio("img/lose.wav");
+
+var ile_skuch = 0;
+var dlugosc = haslo.length;
+var haslo1 = "";
+
+for (i = 0; i < dlugosc; i++) {
+
+    if (haslo.charAt(i) == " ") haslo1 = haslo1 + " ";
+    else haslo1 = haslo1 + "-";
+}
+
+
+
+function wypisz_haslo() {
+
+    document.getElementById("plansza").innerHTML = haslo1;
+
+}
+var abc = new Array(35);
+
+abc[0] = "A";
+abc[1] = "Ą";
+abc[2] = "B";
+abc[3] = "C";
+abc[4] = "Ć";
+abc[5] = "D";
+abc[6] = "E";
+abc[7] = "Ę";
+abc[8] = "F";
+abc[9] = "G";
+abc[10] = "H";
+abc[11] = "I";
+abc[12] = "J";
+abc[13] = "K";
+abc[14] = "L";
+abc[15] = "Ł";
+abc[16] = "M";
+abc[17] = "N";
+abc[18] = "Ń";
+abc[19] = "O";
+abc[20] = "Ó";
+abc[21] = "P";
+abc[22] = "Q";
+abc[23] = "R";
+abc[24] = "S";
+abc[25] = "Ś";
+abc[26] = "T";
+abc[27] = "U";
+abc[28] = "V";
+abc[29] = "W";
+abc[30] = "X";
+abc[31] = "Y";
+abc[32] = "Z";
+abc[33] = "Ż";
+abc[34] = "Ź";
+
+
+
+function start() {
+
+    var tresc_diva = "";
+
+    for (i = 0; i <= 34; i++) {
+
+        var element = "lit" + i;
+        tresc_diva = tresc_diva + '<div onclick="sprawdz(' + i + ')" class="litera" id="' + element + '">' + abc[i] + '</div>';
+        if ((i + 1) % 7 == 0) tresc_diva = tresc_diva + '<div style="clear:both;"></div>';
+    }
+
+    document.getElementById("alfabet").innerHTML = tresc_diva;
+
+    wypisz_haslo();
+}
+
+String.prototype.ustawZnak = function (miejsce, znak) {
+
+    if (miejsce > this.length - 1) return this.toString();
+    else return this.substr(0, miejsce) + znak + this.substr(miejsce + 1);
+}
+
+function sprawdz(nr) {
+
+    var trafiona = false;
+
+    for (i = 0; i < dlugosc; i++) {
+        if (haslo.charAt(i) == abc[nr]) {
+            haslo1 = haslo1.ustawZnak(i, abc[nr]);
+            trafiona = true;
+        }
+    }
+    if (trafiona == true) {
+        yes.play();
+        var element = "lit" + nr;
+        document.getElementById(element).style.color = "green";
+        document.getElementById(element).style.background = "#59e50f";
+        document.getElementById(element).style.cursor = "default";
+        document.getElementById(element).style.border = "3px solid #80f85d";
+        wypisz_haslo();
+    }
+    else {
+        no.play();
+        var element = "lit" + nr;
+        document.getElementById(element).style.color = "#b00000";
+        document.getElementById(element).style.background = "#fc2b2b";
+        document.getElementById(element).style.cursor = "default";
+        document.getElementById(element).style.border = "3px solid #fa2f2f";
+        document.getElementById(element).setAttribute("onclick", ";");
+
+        ile_skuch++;
+        var obraz = "img/s" + ile_skuch + ".jpg";
+        document.getElementById("szubienica").innerHTML = '<img src="' + obraz + '" alt="" />';
+    }
+
+    if (haslo == haslo1) {
+        win.play();
+        document.getElementById("alfabet").innerHTML = 'Brawo! Podałeś poprawne hasło: ' + haslo +
+            '<br/><br/><span class="reset" onclick="location.reload();"> JESZCZE RAZ?</span>';
+    }
+    if (ile_skuch >= 9) {
+        lose.play();
+        document.getElementById("alfabet").innerHTML = 'Przegrałeś! Prawidłowe hasło:<br/>' + haslo +
+            '<br/><br/><span class="reset" onclick="location.reload();"> JESZCZE RAZ?</span>';
+    }
+
+}
+
+
+
+
+
+window.onload = start;
+
+
+var przyslowia = new Array(15);
+
+przyslowia[0] = "Bez pracy nie ma kołaczy";
+przyslowia[1] = "Apetyt rośnie w miarę jedzenia";
+przyslowia[2] = "Dzieci i ryby głosu nie mają";
+przyslowia[3] = "Grosz do grosza a będzie kokosza";
+przyslowia[4] = "Łaska pańska na pstrym koniu jeździ";
+przyslowia[5] = "Nie chwal dnia przed zachodem słońca";
+przyslowia[6] = "Nie od razu Kraków zbudowano";
+przyslowia[7] = "Biednemu zawsze wiatr w oczy";
+przyslowia[8] = "Nie taki diabeł straszny jak go malują";
+przyslowia[9] = "My rządzimy światem a nami kobiety";
+przyslowia[10] = "Co nagle to po diable";
+przyslowia[11] = "Mądry głupiemu ustępuje";
+przyslowia[12] = "Im dalej w las tym więcej drzew";
+przyslowia[13] = "Czas najlepszym lekarzem ";
+przyslowia[14] = "Lepiej z mądrym zgubić niż z głupim znaleźć";
+
+var film = new Array(15);
+
+film[0] = "Interstellar";
+film[1] = "Titanic";
+film[2] = "Catch me if you can";
+film[3] = "Incepcja";
+film[4] = "Suicide squad";
+film[5] = "Joker";
+film[6] = "Godzilla";
+film[7] = "Wonder Woman";
+film[8] = "Terminator";
+film[9] = "Deadpool";
+film[10] = "Predator";
+film[11] = "Shrek";
+film[12] = "Iron man";
+film[13] = "Władca pierścieni";
+film[14] = "Park jurajski";
+
+var gra = new Array(15);
+
+gra[0] = "CSGO";
+gra[1] = "Minecraft";
+gra[2] = "Grand Theft Auto";
+gra[3] = "Ark Survival Evolved";
+gra[4] = "Euro Truck Simulator";
+gra[5] = "Farming Simulator";
+gra[6] = "The Forest";
+gra[7] = "Wiedźmin";
+gra[8] = "Tomb Raider";
+gra[9] = "Metro";
+gra[10] = "Twierdza";
+gra[11] = "Dead by daylight";
+gra[12] = "FNAF";
+gra[13] = "Dont Starve Together";
+gra[14] = "Arma";
+
+
+var kategoria = new Array(3);
+kategoria[0] = "Przysłowie";
+kategoria[1] = "Film";
+kategoria[2] = "Gra";
+
+
+var losowa_kategoria = Math.floor(Math.random() * 3);
+var akt_kategoria;
+if (losowa_kategoria == 0) akt_kategoria = "Przysłowie";
+if (losowa_kategoria == 1) akt_kategoria = "Film";
+if (losowa_kategoria == 2) akt_kategoria = "Gra";
+
+
+document.write('Kategoria: ' + akt_kategoria + '<br/>');
+
+var losowe_haslo = Math.floor(Math.random() * 15);
+document.write('Hasło: ' + losowe_haslo);
+
+var haslo = "";
+
+if (losowa_kategoria == 0) {
+    haslo = przyslowia[losowe_haslo];
+    haslo = haslo.toUpperCase();
+
+}
+if (losowa_kategoria == 1) {
+    haslo = film[losowe_haslo];
+    haslo = haslo.toUpperCase();
+}
+if (losowa_kategoria == 2) {
+    haslo = gra[losowe_haslo];
+    haslo = haslo.toUpperCase();
+}
+
+
+
+var yes = new Audio("img/yes.wav");
+var no = new Audio("img/no.wav");
+var win = new Audio("img/win.wav");
+var lose = new Audio("img/lose.wav");
+
+var ile_skuch = 0;
+var dlugosc = haslo.length;
+var haslo1 = "";
+
+for (i = 0; i < dlugosc; i++) {
+
+    if (haslo.charAt(i) == " ") haslo1 = haslo1 + " ";
+    else haslo1 = haslo1 + "-";
+}
+
+
+
+function wypisz_haslo() {
+
+    document.getElementById("plansza").innerHTML = haslo1;
+
+}
+var abc = new Array(35);
+
+abc[0] = "A";
+abc[1] = "Ą";
+abc[2] = "B";
+abc[3] = "C";
+abc[4] = "Ć";
+abc[5] = "D";
+abc[6] = "E";
+abc[7] = "Ę";
+abc[8] = "F";
+abc[9] = "G";
+abc[10] = "H";
+abc[11] = "I";
+abc[12] = "J";
+abc[13] = "K";
+abc[14] = "L";
+abc[15] = "Ł";
+abc[16] = "M";
+abc[17] = "N";
+abc[18] = "Ń";
+abc[19] = "O";
+abc[20] = "Ó";
+abc[21] = "P";
+abc[22] = "Q";
+abc[23] = "R";
+abc[24] = "S";
+abc[25] = "Ś";
+abc[26] = "T";
+abc[27] = "U";
+abc[28] = "V";
+abc[29] = "W";
+abc[30] = "X";
+abc[31] = "Y";
+abc[32] = "Z";
+abc[33] = "Ż";
+abc[34] = "Ź";
+
+
+
+function start() {
+
+    var tresc_diva = "";
+
+    for (i = 0; i <= 34; i++) {
+
+        var element = "lit" + i;
+        tresc_diva = tresc_diva + '<div onclick="sprawdz(' + i + ')" class="litera" id="' + element + '">' + abc[i] + '</div>';
+        if ((i + 1) % 7 == 0) tresc_diva = tresc_diva + '<div style="clear:both;"></div>';
+    }
+
+    document.getElementById("alfabet").innerHTML = tresc_diva;
+
+    wypisz_haslo();
+}
+
+String.prototype.ustawZnak = function (miejsce, znak) {
+
+    if (miejsce > this.length - 1) return this.toString();
+    else return this.substr(0, miejsce) + znak + this.substr(miejsce + 1);
+}
+
+function sprawdz(nr) {
+
+    var trafiona = false;
+
+    for (i = 0; i < dlugosc; i++) {
+        if (haslo.charAt(i) == abc[nr]) {
+            haslo1 = haslo1.ustawZnak(i, abc[nr]);
+            trafiona = true;
+        }
+    }
+    if (trafiona == true) {
+        yes.play();
+        var element = "lit" + nr;
+        document.getElementById(element).style.color = "green";
+        document.getElementById(element).style.background = "#59e50f";
+        document.getElementById(element).style.cursor = "default";
+        document.getElementById(element).style.border = "3px solid #80f85d";
+        wypisz_haslo();
+    }
+    else {
+        no.play();
+        var element = "lit" + nr;
+        document.getElementById(element).style.color = "#b00000";
+        document.getElementById(element).style.background = "#fc2b2b";
+        document.getElementById(element).style.cursor = "default";
+        document.getElementById(element).style.border = "3px solid #fa2f2f";
+        document.getElementById(element).setAttribute("onclick", ";");
+
+        ile_skuch++;
+        var obraz = "img/s" + ile_skuch + ".jpg";
+        document.getElementById("szubienica").innerHTML = '<img src="' + obraz + '" alt="" />';
+    }
+
+    if (haslo == haslo1) {
+        win.play();
+        document.getElementById("alfabet").innerHTML = 'Brawo! Podałeś poprawne hasło: ' + haslo +
+            '<br/><br/><span class="reset" onclick="location.reload();"> JESZCZE RAZ?</span>';
+    }
+    if (ile_skuch >= 9) {
+        lose.play();
+        document.getElementById("alfabet").innerHTML = 'Przegrałeś! Prawidłowe hasło:<br/>' + haslo +
+            '<br/><br/><span class="reset" onclick="location.reload();"> JESZCZE RAZ?</span>';
+    }
+
+}
+
+
+
