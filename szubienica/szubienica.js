@@ -1,34 +1,101 @@
 ﻿window.onload = start;
 
 
-var baza_hasel = new Array(15);
+var przyslowia = new Array(15);
 
-baza_hasel[0] = "Bez pracy nie ma kołaczy";
-baza_hasel[1] = "Apetyt rośnie w miarę jedzenia";
-baza_hasel[2] = "Dzieci i ryby głosu nie mają";
-baza_hasel[3] = "Grosz do grosza a będzie kokosza";
-baza_hasel[4] = "Łaska pańska na pstrym koniu jeździ";
-baza_hasel[5] = "Nie chwal dnia przed zachodem słońca";
-baza_hasel[6] = "Nie od razu Kraków zbudowano";
-baza_hasel[7] = "Biednemu zawsze wiatr w oczy";
-baza_hasel[8] = "Nie taki diabeł straszny jak go malują";
-baza_hasel[9] = "My rządzimy światem a nami kobiety";
-baza_hasel[10] = "Co nagle to po diable";
-baza_hasel[11] = "Mądry głupiemu ustępuje";
-baza_hasel[12] = "Im dalej w las tym więcej drzew";
-baza_hasel[13] = "Czas najlepszym lekarzem ";
-baza_hasel[14] = "Lepiej z mądrym zgubić niż z głupim znaleźć";
+przyslowia[0] = "Bez pracy nie ma kołaczy";
+przyslowia[1] = "Apetyt rośnie w miarę jedzenia";
+przyslowia[2] = "Dzieci i ryby głosu nie mają";
+przyslowia[3] = "Grosz do grosza a będzie kokosza";
+przyslowia[4] = "Łaska pańska na pstrym koniu jeździ";
+przyslowia[5] = "Nie chwal dnia przed zachodem słońca";
+przyslowia[6] = "Nie od razu Kraków zbudowano";
+przyslowia[7] = "Biednemu zawsze wiatr w oczy";
+przyslowia[8] = "Nie taki diabeł straszny jak go malują";
+przyslowia[9] = "My rządzimy światem a nami kobiety";
+przyslowia[10] = "Co nagle to po diable";
+przyslowia[11] = "Mądry głupiemu ustępuje";
+przyslowia[12] = "Im dalej w las tym więcej drzew";
+przyslowia[13] = "Czas najlepszym lekarzem ";
+przyslowia[14] = "Lepiej z mądrym zgubić niż z głupim znaleźć";
 
+var film = new Array(15);
+
+film[0] = "Interstellar";
+film[1] = "Titanic";
+film[2] = "Catch me if you can";
+film[3] = "Incepcja";
+film[4] = "Suicide squad";
+film[5] = "Joker";
+film[6]= "Godzilla";
+film[7] = "Wonder Woman";
+film[8] = "Terminator";
+film[9] = "Deadpool";
+film[10] = "Predator";
+film[11] = "Shrek";
+film[12] = "Iron man";
+film[13] = "Władca pierścieni";
+film[14] = "Park jurajski";
+
+var gra = new Array(15);
+
+gra[0] = "CSGO";
+gra[1] = "Minecraft";
+gra[2] = "Grand Theft Auto";
+gra[3] = "Ark Survival Evolved";
+gra[4] = "Euro Truck Simulator";
+gra[5] = "Farming Simulator";
+gra[6] = "The Forest";
+gra[7] = "Wiedźmin";
+gra[8] = "Tomb Raider";
+gra[9] = "Metro";
+gra[10] = "Twierdza";
+gra[11] = "Dead by daylight";
+gra[12] = "FNAF";
+gra[13] = "Dont Starve Together";
+gra[14] = "Arma";
+
+
+var kategoria = new Array(3);
+kategoria[0] = "Przysłowie";
+kategoria[1] = "Film";
+kategoria[2] = "Gra";
+
+
+var losowa_kategoria = Math.floor(Math.random() * 3);
+var akt_kategoria;
+if (losowa_kategoria == 0) akt_kategoria = "Przysłowie";
+if (losowa_kategoria == 1) akt_kategoria = "Film";
+if (losowa_kategoria == 2) akt_kategoria = "Gra";
+
+
+document.write('Kategoria: ' + akt_kategoria + '<br/>');
 
 var losowe_haslo = Math.floor(Math.random() * 15);
-document.write(losowe_haslo);
+document.write('Hasło: ' + losowe_haslo);
 
 var haslo = "";
-haslo = baza_hasel[losowe_haslo];
-haslo = haslo.toUpperCase();
+
+if (losowa_kategoria == 0) {
+    haslo = przyslowia[losowe_haslo];
+    haslo = haslo.toUpperCase();
+
+}
+if (losowa_kategoria == 1) {
+    haslo = film[losowe_haslo];
+    haslo = haslo.toUpperCase();
+}
+if (losowa_kategoria == 2) {
+    haslo = gra[losowe_haslo];
+    haslo = haslo.toUpperCase();
+}
+
+
 
 var yes = new Audio("img/yes.wav");
 var no = new Audio("img/no.wav");
+var win = new Audio("img/win.wav");
+var lose = new Audio("img/lose.wav");
 
 var ile_skuch = 0;
 var dlugosc = haslo.length;
@@ -143,10 +210,12 @@ function sprawdz(nr) {
         }
 
     if (haslo == haslo1) {
+        win.play();
         document.getElementById("alfabet").innerHTML = 'Brawo! Podałeś poprawne hasło: ' + haslo +
             '<br/><br/><span class="reset" onclick="location.reload();"> JESZCZE RAZ?</span>';
     }
     if (ile_skuch >= 9) {
+        lose.play();
         document.getElementById("alfabet").innerHTML = 'Przegrałeś! Prawidłowe hasło:<br/>' + haslo +
             '<br/><br/><span class="reset" onclick="location.reload();"> JESZCZE RAZ?</span>';
     }
