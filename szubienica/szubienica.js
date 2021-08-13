@@ -1,30 +1,7 @@
 ﻿window.onload = start;
 
 
-var baza_hasel = new Array(15);
-
-baza_hasel[0] = "Bez pracy nie ma kołaczy";
-baza_hasel[1] = "Apetyt rośnie w miarę jedzenia";
-baza_hasel[2] = "Dzieci i ryby głosu nie mają";
-baza_hasel[3] = "Grosz do grosza a będzie kokosza";
-baza_hasel[4] = "Łaska pańska na pstrym koniu jeździ";
-baza_hasel[5] = "Nie chwal dnia przed zachodem słońca";
-baza_hasel[6] = "Nie od razu Kraków zbudowano";
-baza_hasel[7] = "Biednemu zawsze wiatr w oczy";
-baza_hasel[8] = "Nie taki diabeł straszny jak go malują";
-baza_hasel[9] = "My rządzimy światem a nami kobiety";
-baza_hasel[10] = "Co nagle to po diable";
-baza_hasel[11] = "Mądry głupiemu ustępuje";
-baza_hasel[12] = "Im dalej w las tym więcej drzew";
-baza_hasel[13] = "Czas najlepszym lekarzem ";
-baza_hasel[14] = "Lepiej z mądrym zgubić niż z głupim znaleźć";
-
-
-var losowe_haslo = Math.floor(Math.random() * 5);
-document.write(losowe_haslo);
-
-var haslo = "";
-haslo = baza_hasel[losowe_haslo];
+var haslo = "Bez pracy nie ma kołaczy";
 haslo = haslo.toUpperCase();
 
 var yes = new Audio("img/yes.wav");

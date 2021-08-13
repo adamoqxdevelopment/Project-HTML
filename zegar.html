@@ -35,6 +35,9 @@
 </head>
 <body>
     <div id="zegarek">
+        <p id="minęła-doba" style="display: none;">Minela dobra</p>
+        <p id="minęła-godzina" style="display: none;">Minela godzina</p>
+        <p id="minęła-minuta" style="display: none;">Minela minuta</p>
         <p id="Dziś-godzina">puste</p>
         <p id="Dziś-data">puste</p>
 
@@ -44,11 +47,26 @@
 
         function zegarek() {
             var data = new Date();
+            var liczniksekund = data.getSeconds();
 
             document.getElementById("Dziś-data").innerHTML = data.getDate() + ", " + (data.getMonth() + 1) + ", " + data.getFullYear();
 
             document.getElementById("Dziś-godzina").innerHTML = data.getHours() + " : " + data.getMinutes() + " : " + data.getSeconds();
             setTimeout("zegarek()", 500);
+            if (liczniksekund == 0) {
+                document.getElementById("minęła-minuta").style.display = 'block';
+                setTimeout("document.getElementById('minęła-minuta').style.display = 'none';", 500);
+            }
+            if (licznikminut == 0) {
+                document.getElementById("minęła-godzina").style.display = 'block';
+                setTimeout("document.getElementById('minęła - godzina').style.display = 'none';", 500);
+            }
+            if (licznikminut == 0) {
+                document.getElementById("minęła-doba").style.display = 'block';
+                setTimeout("document.getElementById('minęła - doba').style.display = 'none';", 500);
+
+            }
+
         }
 
         zegarek();
