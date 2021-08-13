@@ -20,7 +20,7 @@ baza_hasel[13] = "Czas najlepszym lekarzem ";
 baza_hasel[14] = "Lepiej z mądrym zgubić niż z głupim znaleźć";
 
 
-var losowe_haslo = Math.floor(Math.random() * 5);
+var losowe_haslo = Math.floor(Math.random() * 15);
 document.write(losowe_haslo);
 
 var haslo = "";
