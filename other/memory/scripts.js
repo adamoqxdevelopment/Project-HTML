@@ -1,9 +1,5 @@
 ﻿var cards = ["ciri.png", "geralt.png", "jaskier.png", "jaskier.png", "iorweth.png", "triss.png","geralt.png", "yen.png", "ciri.png", "triss.png", "yen.png", "iorweth.png" ];
 
-//alert(cards[4]);
-
-//console.log(cards);
-
 var card0 = document.getElementById('card0');
 var card1 = document.getElementById('card1');
 var card2 = document.getElementById('card2');
@@ -83,8 +79,6 @@ function revealCard(nr) {
 
     }
 
-
-
 }
 function hide2Cards(nr1, nr2) {
 
@@ -95,7 +89,8 @@ function hide2Cards(nr1, nr2) {
 
     if (pairsLeft == 0) {
 
-        $('.board').html("<h1>You Win <br> Done in " + turnCounter + ' turns</h1>');
+        $('.board').html('<h1>You Win <br> Done in ' + turnCounter + ' turns</h1><br/>'
+           +  '<span class= "reset" onclick = "location.reload();" > JESZCZE RAZ ?</span >');
 
     }
 
@@ -118,4 +113,3 @@ function restore2Cards(nr1, nr2) {
 
 // losowe awatary
 // automatyczne zapisywanie zdarzeniowości
-// przycisk refreshu strony 

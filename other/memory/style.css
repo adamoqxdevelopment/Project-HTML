@@ -69,3 +69,11 @@ p {
     transition: all 0.3s ease-in-out;
     filter: brightness(100%);
 }
+.reset {
+    cursor: pointer;
+    font-size: 48px;
+    transition: 0.7s;
+}
+.reset:hover {
+    color: green;
+}
