@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--<script>
+
+        var napis = "";
+
+        for (i = 0; i <= 7; i++) {
+            
+            console.log(napis + "#");
+            napis = napis + "#";
+
+        }
+
+    </script>-->
+
+    <!--<script>
+
+        function FizzBuzz(arg) {
+            if (arg % 3 === 0 && arg % 5 === 0) {
+                return "FizzBuzz";
+            }
+            if (arg % 3 === 0) {
+                return "Fizz";
+
+            }
+            if (arg % 5 === 0) {
+                return "Buzz";
+
+            }
+            return arg;
+        }
+
+        var liczba = 1;
+
+        for (i = 0; i < 100; i++) {
+
+            napis = FizzBuzz(liczba);
+            console.log(napis);
+
+            liczba++;
+        }
+
+    </script>-->
+
+    <script>
+
+        size = 4;
+
+        for (i = 1; i <= size; i++) {
+            napis = "";
+
+
+            if (i < size) {
+                napis = napis + "#" + "-";
+            }
+
+            if (i == 4) {
+                document.write("<br>");
+            }
+            
+            document.write(napis);
+        }
+
+    </script>
+</body>
+</html>
