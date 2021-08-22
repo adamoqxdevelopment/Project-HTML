@@ -31,5 +31,30 @@
 
         </div>
     
+    <script>
+
+        function komunikat() {
+            var random = Math.floor(Math.random() * 5);
+            var kolor = new Array("red", "blue", "green", "black", "white", "purple");
+            document.getElementById('button').style.color = kolor[random];
+        }
+
+        function zmiana() {
+            var random = Math.floor(Math.random() * 5);
+            var kolor = new Array("red", "blue", "green", "black", "white", "purple");
+            document.getElementById('logo').style.color = kolor[random];
+        }
+        
+        
+
+        let element = document.getElementById("button");
+
+        element.addEventListener("mouseover", function (event) {
+
+            komunikat();
+            setTimeout(zmiana(), 500);
+        }, false);
+    </script>
+
 </body>
 </html>
