@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 5px;
+  height: 300px;
+}
+
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+header h2 {
+  color: white;
+  padding: 15px;
+}
+/*# sourceMappingURL=style.css.map */

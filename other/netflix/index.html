@@ -28,32 +28,35 @@
                 <p id="watch">WATCH FREE FOR 365 DAYS</p>
 
             </div>
+            <div id="right-nav" class="right-nav-closed">
+
+
+
+            </div>
+
 
         </div>
     
     <script>
 
-        function komunikat() {
-            var random = Math.floor(Math.random() * 5);
-            var kolor = new Array("red", "blue", "green", "black", "white", "purple");
-            document.getElementById('button').style.color = kolor[random];
-        }
+        let button = document.querySelector("#button");
+        let right_nav = document.querySelector("#right-nav");
 
-        function zmiana() {
-            var random = Math.floor(Math.random() * 5);
-            var kolor = new Array("red", "blue", "green", "black", "white", "purple");
-            document.getElementById('logo').style.color = kolor[random];
-        }
-        
-        
+        button.addEventListener('click', zmienKlase);
 
-        let element = document.getElementById("button");
+        function zmienKlase() {
 
-        element.addEventListener("mouseover", function (event) {
+//            right_nav.classList.add('right-nav-open');
+//            right_nav.classList.remove('right-nav-closed');
 
-            komunikat();
-            setTimeout(zmiana(), 500);
-        }, false);
+            if (right_nav.classList.contains('right-nav-open')) {
+                alert('open');
+            }
+            else {
+                alert('closed');
+                right_nav.classList.add('right-nav-open');
+            }
+     
     </script>
 
 </body>
