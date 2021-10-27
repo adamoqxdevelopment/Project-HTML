@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+         font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+         background-color: #01000f;
+         Margin-right: 0.05vh;
+         Margin-left: 0px;
+         Opacity: 1;
+         Transition: 0.5s;
+    } 
+    #openrmenu {
+         font-size: 8vh;
+         position: fixed; 
+         margin-right: ;
+         width: 45%;
+         color: #999;
+         text-align: right;
+         } 
+    #fixedh {
+         width: 100%;
+         height: 13vh;
+         text-align: center;
+         background-color: #111;
+         font-size: 500%;
+         position: fixed;
+         z-index: 3;
+         margin-top: -8px;
+         border-radius: ;
+         opacity: 1;
+         transition: 2s;
+         font-family: Pacifico;
+         top: 0;
+         border-radius: 0px 0px 0px 30px;
+
+         } 
+    #fixedh h1 {
+         Font-size: 8vh;
+         Float: ;
+         Margin-top: 0;
+         Width: 50%;
+         Text-align:center ;
+         Color: white;
+         margin-left: 10px;
+
+
+         } 
+    .menu {
+         height: 100vh;
+         width: 0;
+         position: fixed;
+         z-index: 5;
+         top: 0;
+         right: 0;
+         background-color: #111;
+         overflow-x: hidden;
+         transition: 1s;
+         padding-top: 60px;
+         }
+    .menu a {
+         padding: 8px 8px 8px 32px;
+         text-decoration: none;
+         font-size: 3vh;
+         color: #818181;
+         display: block;
+         transition: 0.3s;
+         
+         }
+    .menu a:hover {
+         color: #f1f1f1;
+         }
+    .menu .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 10vh;
+         margin-left: 50px;
+         }
+    .blank200px {
+        Width: 100%;
+        Height: 200px;
+        }
+    #witaj {
+         text-align: center;
+         font-size: 5vh;
+         text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+         color: black;
+         
+         }
+
+.post  .zawartosc {
+text-align: center;
+font-size: 2.5vh;
+}
+.post .zawartosc a {
+    color: #111;
+    text-decoration: none;
+
+}
+.post {
+	background-image: linear-gradient( #888, #444);
+    cursor: pointer;
+    background-color: #666;
+    transition: 0.3s;
+}
+.post:hover {
+  box-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
+#div-posty {
+margin: 10%;
+padding:15px;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div id="menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="zamknijMenu()">&times;</a><br><br><br><br><br>
+        <a href="#"><i class="fa fa-fw fa-wrench"></i> Załaduj ponownie stronę</a><br><br>
+        <a href="#"><i class="fa fa-fw fa-user"></i> O Nas - Wkrótce</a><br><br>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Usługi </a><br><br>
+        <a href="#"><i class="fa fa-fw fa-user"></i> O Projekcie</a><br><br>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Kontakt </a><br><br>
+        <a href="#"><i class="fa fa-fw fa-wrench"></i> Logi zmian</a><br><br>
+       </div>
+
+    <div id="fixedh">
+
+       <span id="openrmenu" onclick="otworzMenu()">&#9776;</span>
+       <h1>ZSEL</h1><br>
+       
+     </div>
+
+     <div class="blank200px"></div>  
+        <h1 id="witaj">Newsy z ZSEL</h1>
+
+        <div id="div-posty">
+   
+
+
+            <div class="post"   id="post1">
+                <h1>3 TD5 klasą roku</h1>
+               <a href="#" >
+             <div class="zawartosc" id="jakkorzystaczinternetu">
+                 <p href="#">Przeprowadzony na początku września plebiscyt na najlepszą klasę
+                     zdecydowanie wygraliśmy, zmiażdzyliśmy konkurencję informatyczną z 3TC i 3TI
+                    <div class="blank500px"></div>
+                     
+                 </p>
+              </a>
+             </div>
+                <p class="data" >15 Października 2021</p>
+   
+            </div>
+   
+   
+      
+   
+   
+                    <div class="post"  id="post2">
+                       <h1>Znowu brakuje mydła w szkolnych łazienkach</h1>
+                             <a href="#" >
+                      <div class="zawartosc" id="astrowatch">
+                        <p>Sytuacja związana z COVID-19 wciąż pozostaje napięta, być może ostatnie 
+                            8 tyś nowych zakarzeń spowodował brak mydła w łazience naprzeciwo sali 105.
+                             <div class="blank500px"></div>
+                        </p>
+                           </a>
+                      </div>
+                          <p class="data" >22 Października 2021</p>
+   
+                    </div>
+   
+   
+      
+   
+   
+                     <div class="post" id="post3">
+                          <h1>Najgorszy przedmiot? Chemia - zobacz wyniki badania</h1>
+                                <a href="#" >
+                            <div class="zawartosc" id="kupmeh">
+                               <p>Przeprowadzone ostatnio przez naszą redakcję 
+                                   badanie na temat najgorszego przedmiotu w szkole jednoznacznie wskazało chemię 
+                                   jako najgorszy do nauki przedmiot.
+                               <div class="blank500px"></div>
+                               </p>
+   
+   
+                                </a>
+                            </div>
+                     <p class="data" >28 Października 2021</p>
+   
+                            </div>
+   
+    </div>
+
+     <script>
+         function otworzMenu() {
+        document.getElementById("menu").style.width = "38vh";
+      }
+      
+      function zamknijMenu() {
+        document.getElementById("menu").style.width = "0";
+      }
+     </script>
+</body>
+</html>
