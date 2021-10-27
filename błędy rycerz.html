@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<style>
+ #plansza {
+    background-color: #333;  
+ }
+</style>
+</head>
+ 
+<body>
+Animacja
+<br />
+ 
+<canvas id="plansza" width="400" height="200">
+</canvas>
+ 
+<script>
+//Dowolny program w JavaScript ktory przeglarka wykona
+ let plansza_gry, rysowanie;
+ let niebieska_kulka_srodek_x = 50;
+ let niebieska_kulka_predkosc_x = 0.5;
+ let czerwona_kulka_srodek_x = 350;
+ let czerwona_kulka_predkosc_x = -1;
+ 
+ plansza_gry = document.getElementById("plansza");
+ rysowanie = plansza_gry.getContext("2d");
+ 
+ function AnimacjaDwaKolka() {
+    rysowanie.clearRect(0, 0, 400, 200);
+ 
+    rysowanie.beginPath();
+    rysowanie.fillStyle = "#4287f5";
+    rysowanie.arc(niebieska_kulka_srodek_x, 100, 10, 0, 2*Math.PI);
+    rysowanie.fill();
+    rysowanie.closePath();
+ 
+    rysowanie.beginPath();
+    rysowanie.fillStyle = "red";
+    rysowanie.arc(czerwona_kulka_srodek_x, 100, 10, 0, 2*Math.PI);
+    rysowanie.fill();
+    rysowanie.closePath();   
+ 
+    niebieska_kulka_srodek_x = niebieska_kulka_srodek_x + niebieska_kulka_predkosc_x;
+    czerwona_kulka_srodek_x = czerwona_kulka_srodek_x + czerwona_kulka_predkosc_x;
+ 
+    if (niebieska_kulka_srodek_x >= czerwona_kulka_srodek_x) { //niebieska z prawej
+       temp = niebieska_kulka_predkosc_x;
+       niebieska_kulka_predkosc_x = czerwona_kulka_predkosc_x;
+       czerwona_kulka_predkosc_x = temp;
+       niebieska_kulka_srodek_x = czerwona_kulka_srodek_x - 1;
+    }
+    if (niebieska_kulka_srodek_x < 0) {
+       niebieska_kulka_predkosc_x = Math.abs (niebieska_kulka_predkosc_x);
+    }
+ 
+    if (czerwona_kulka_srodek_x > 400) {
+       czerwona_kulka_predkosc_x = -1 * Math.abs (czerwona_kulka_predkosc_x);
+    }
+ }
+ setInterval (AnimacjaDwaKolka, 10);
+</script>
+ 
+</body>
+ 
+</html>

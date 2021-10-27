@@ -28,12 +28,39 @@
                 <p id="watch">WATCH FREE FOR 365 DAYS</p>
 
             </div>
-            <div id="right-nav" class="right-nav-closed">
-
-
+            <div id="right-nav" class="">
 
             </div>
 
+            <div id="menu">
+
+                <p id="akapit1"></p>
+                <p id="akapit2"></p>
+                <p id="akapit3"></p>
+
+                
+            </div>
+        
+    <script src="../anime-master/lib/anime.min.js"></script>
+    <script>
+
+        anime({
+            targets: '#div-signin',
+            width: '250px',
+            background: '#000',
+            // rotate: '1turn',
+            duration: 4000,
+            delay: 1000,
+            easing: 'easeOutQuart'
+});
+        anime({
+            targets: '#logo',
+            rotateZ: 720,
+            duration: 4000,
+            easing: 'easeInOutQuint'
+
+        })
+    </script>
 
         </div>
     
@@ -45,18 +72,34 @@
         button.addEventListener('click', zmienKlase);
 
         function zmienKlase() {
+            //alert("Funkcja wywołana!");
 
 //            right_nav.classList.add('right-nav-open');
-//            right_nav.classList.remove('right-nav-closed');
 
             if (right_nav.classList.contains('right-nav-open')) {
-                alert('open');
+
+                //jeśli otwarte zamyka
+                right_nav.classList.remove('right-nav-open');
+                right_nav.classList.add('right-nav-default');
+                setTimeout( function (){
+                    right_nav.style.display = "none";
+                }, 500);
+                    
+                // setTimeout(alert('zamykam'), 1500)
             }
             else {
-                alert('closed');
+
+                //jeśli zamknięte otwiera
+                // setTimeout( function() {
+                    
+                // }, 0);
+                right_nav.style.display = "block";
                 right_nav.classList.add('right-nav-open');
+                right_nav.classList.remove('right-nav-default');
+                
+                // setTimeout(alert('otwieram'), 1500)
             }
-     
+        }
     </script>
 
 </body>

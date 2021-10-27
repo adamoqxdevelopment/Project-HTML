@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScirpt Animations</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    
+    <div id="main">
+        <div id="square"></div>
+        <div id="made-with">
+            <p class="made-with-p">Made</p>
+            <p class="made-with-p">with</p>
+            <p id="heart" class="made-with-p">❤</p>
+            <p class="made-with-p">By</p>
+            <p class="made-with-p">ZondoX</p>
+        </div>
+    </div>
+
+    <script src="../anime-master/lib/anime.min.js"></script>
+    <script defer>
+
+        anime({
+            targets: '#square',
+            translateX: '370px',
+            rotate: '1080',
+            duration: '4500',
+            easing: 'easeInOutExpo',
+            loop: '3',
+            direction: 'alternate',
+            // scale: '3'
+            
+            
+        })
+        anime({
+            targets: '#square',
+            delay: '14000',
+            opacity: '0',
+        })
+        anime({
+            targets: '.made-with-p',
+            rotateZ: '360',
+            color: '#fff',
+            duration: '4500',
+            // opacity: '1',
+        })
+        anime({
+            targets: '#heart',
+            color: '#b64040', 
+            easing: 'linear',
+            duration: '3000',
+        })
+
+    </script>
+
+
+</body>
+</html>

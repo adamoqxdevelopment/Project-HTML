@@ -1,12 +1,10 @@
 ﻿body {
     color: white;
     background-image: -webkit-linear-gradient(top, 
-    rgba(0,0,0,0.7)0%,
-    rgba(0,0,0,0.7) 100% ),
+    rgba(0,0,0,0.9)0%,
+    rgba(0,0,0,0.9) 100% ),
         url(netflix.jpg);
 
-}
-#all {
 }
 #fixed {
     font-size: 20px;
@@ -74,20 +72,26 @@
 }
 #right-nav {
     transition: 0.5s;
-}
-.right-nav-open {
-    height: 900px;
-    width: 300px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border: 1px solid white;
-}
-.right-nav-closed {
     height: 900px;
     width: 300px;
     position: absolute;
     top: 0px;
     right: -310px;
     border: 1px solid red;
+    display: none;
+}
+.right-nav-default {
+    
+    /*  */
+
+}
+.right-nav-open {
+    transform: translateX(-310px);
+    /* height: 900px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid white; */
+    /* display: block; */
 }
